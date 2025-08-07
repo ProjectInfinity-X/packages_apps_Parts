@@ -96,7 +96,7 @@ public class ButtonSettings extends SettingsPreferenceFragment
     private static final String KEY_CLICK_PARTIAL_SCREENSHOT =
             "click_partial_screenshot";
     private static final String KEY_SWAP_CAPACITIVE_KEYS = "swap_capacitive_keys";
-//    private static final String KEY_NAV_BAR_INVERSE = "sysui_nav_bar_inverse";
+    private static final String KEY_NAV_BAR_INVERSE = "sysui_nav_bar_inverse";
     private static final String KEY_ENABLE_TASKBAR = "enable_taskbar";
 
     private static final String CATEGORY_POWER = "power_key";
@@ -134,7 +134,7 @@ public class ButtonSettings extends SettingsPreferenceFragment
     private SwitchPreferenceCompat mHomeAnswerCall;
     private ListPreference mTorchLongPressPowerTimeout;
     private SwitchPreferenceCompat mSwapCapacitiveKeys;
-//    private SwitchPreferenceCompat mNavBarInverse;
+    private SwitchPreferenceCompat mNavBarInverse;
     private SwitchPreferenceCompat mEnableTaskbar;
 
     private PreferenceCategory mNavigationPreferencesCat;
@@ -450,7 +450,7 @@ public class ButtonSettings extends SettingsPreferenceFragment
             mSwapCapacitiveKeys.setDependency(KEY_DISABLE_NAV_KEYS);
         }
 
-//        mNavBarInverse = findPreference(KEY_NAV_BAR_INVERSE);
+        mNavBarInverse = findPreference(KEY_NAV_BAR_INVERSE);
 
         mEnableTaskbar = findPreference(KEY_ENABLE_TASKBAR);
         if (mEnableTaskbar != null) {
