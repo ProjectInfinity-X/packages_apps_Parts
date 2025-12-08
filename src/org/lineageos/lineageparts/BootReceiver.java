@@ -27,8 +27,6 @@ public class BootReceiver extends BroadcastReceiver {
 
     @Override
     public void onReceive(Context ctx, Intent intent) {
-        // Extract the contributors database
-        ContributorsCloudFragment.extractContributorsCloudDatabase(ctx);
 
         // Toggle LiveDisplay visibility regardless of user type
         LiveDisplaySettings.restoreLiveDisplay(ctx);
